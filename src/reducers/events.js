@@ -1,9 +1,12 @@
 import _ from 'lodash'
 import {
   READ_EVENTS,
+<<<<<<< HEAD
   READ_EVENT,
   CREATE_EVENTS,
   UPDATE_EVENT,
+=======
+>>>>>>> 63e1872... delete-event
   DELETE_EVENT
 } from '../actions'
 
