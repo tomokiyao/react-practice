@@ -47,7 +47,10 @@ class EventsShow extends React.Component {
 
   render() {
     const { handleSubmit, pristine, submitting, invalid } = this.props
+<<<<<<< HEAD
     const style = { margin: 12 }
+=======
+>>>>>>> d4c611d... event show
 
     return (
       <React.Fragment>
@@ -58,9 +61,17 @@ class EventsShow extends React.Component {
           <div>
             <Field label="Body" name="body" type="text" component={this.renderField} />
           </div>
+<<<<<<< HEAD
           <RaisedButton label="Submit" type="submit" style={style} disabled={pristine || submitting || invalid} />
           <RaisedButton label="Cancel" style={style} containerElement={<Link to="/" />} />
           <RaisedButton label="Delete" style={style} onClick={this.onDeleteClick} />
+=======
+          <div>
+            <input type="submit" value="Submit" disabled={pristine || submitting || invalid} />
+            <Link to="/">Cancel</Link>
+            <Link to="/" onClick={this.onDeleteClick}>Delete</Link>
+          </div>
+>>>>>>> d4c611d... event show
         </form>
       </React.Fragment>
     )
